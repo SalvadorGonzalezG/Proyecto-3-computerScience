@@ -39,14 +39,16 @@ class Alumno{
         document.querySelector("#alumno").innerHTML +=
     `
     <div class = "card">
+            <h1> CONFIRMACION DE TUS DATOS: </h1>
+            <p > Tu nombre es: ${alumno.nombre}</p>
+            <p class=""> Tus apellidos son: ${alumno.apellidos}</p>
+            <p class=""> Tu edad es: ${alumno.edad} años</p>
+            <h5>NOTA: Da click en confirmar si son correctos tus datos para poder dar de alta las materias que deseas cursar bienvenido ${alumno.nombre}. </h5>
+            <button id="button" class="" type="button"> Confirmar.</button>
 
-            <p > ${alumno.nombre}</p>
-            <p class="title is-4">${alumno.apellidos}</p>
-            <p class="subtitle is-6"> Tipo de animal: ${alumno.edad}</p>
-            
            
     </div>`;
-    console.log(alumno.edad)
+    
     
     }
     function clickear(alumno){
