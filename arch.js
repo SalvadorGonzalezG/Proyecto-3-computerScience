@@ -57,6 +57,7 @@ class Alumno{
             <p class=""> Tu edad es: ${alumno.edad} años</p>
             <h5>NOTA: Da click en confirmar si son correctos tus datos para poder dar de alta las materias que deseas cursar, ¡bienvenido ${alumno.nombre}! ${alumno.tipo}. </h5>
             <button id="buton" class="" type="button" onclick ="confirmar()" > Confirmar.</button>
+            <button id= "" class="" type="" onclick = "crearAlumno()">Regresar.</button>
     </div>`;
     }
     
@@ -76,7 +77,7 @@ class Alumno{
         ALTA DE MATERIAS <br>
         <label class="label" for="tipo"> Materias a inscribir. </label>
         <div >
-            <select id="tipo">
+            <select id="tipo1">
                 <option>Arte.</option>
                 <option>Matematicas.</option>
                 <option>Español</option>
@@ -90,7 +91,12 @@ class Alumno{
             <option> Dr.Angel David Pineda.</option>
             <option> Dra. Maria Salazar L.</option>                    
             </select> 
-        </div>        
+            <button id="buton" class="" type="button" onclick ="inscribir()" > Inscribir.</button>  
+        </div>
         `
-
+    }
+    function inscribir(){
+        let nodoInscribir = document.querySelector("#fist")
+        nodoInscribir.innerHTML = `Muchas gracias ${alumno.nombre} ${alumno.apellidos} eres unalumno ${alumno.tipo} 
+        se ha dado de alta tu materia con el profesor seleccionado ¡MUCHAS GRACIAS!`
     }
